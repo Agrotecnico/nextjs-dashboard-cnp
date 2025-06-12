@@ -3,11 +3,14 @@ import {
   CustomerField,
   CustomersTableType,
   InvoiceForm,
+  User,
   InvoicesTable,
   LatestInvoiceRaw,
   Revenue,
+   CommentsPost,
 } from './definitions';
 import { formatCurrency } from './utils';
+import { unstable_noStore as noStore } from 'next/cache'
 
 export async function fetchRevenue() {
   try {
@@ -213,5 +216,67 @@ export async function fetchFilteredCustomers(query: string) {
   } catch (err) {
     console.error('Database Error:', err);
     throw new Error('Failed to fetch customer table.');
+  }
+}
+
+export async function fetchUserById(email: string | null | undefined): Promise<User | undefined> {
+  try {
+    const user = await sql<User>`SELECT * FROM users WHERE email=${email}`;
+    return user.rows[0];
+  } catch (error) {
+    console.error('Failed to fetch user:', error);
+    throw new Error('Failed to fetch user.');
+  }
+}
+
+
+// export async function fetchCommentById(id: string) {
+//   noStore()
+//   try {
+//     const comments = await sql<Comment>`
+//       SELECT
+//       id,
+//       email_id,
+//       post_slug,
+//       comment,
+//       created_at
+//       FROM comments
+//       WHERE post_slug = ${id};
+//     `;
+
+//     // const comment = data.rows.map((comment) => ({
+//     //   ...comment,
+//     // }));
+
+//     // return comment[0];
+//     return comments.rows;
+//   } catch (error) {
+//     console.error('Database Error:', error);
+//     throw new Error('Failed to fetch comment.');
+//   }
+// }
+export async function fetchFilteredComments(id: string/* query: string, currentPage: number */) {
+  noStore()
+  // const offset = (currentPage - 1) * ITEMS_PER_PAGE;
+
+  try {
+    const comments = await sql<CommentsPost>`
+    SELECT
+    comments.id,
+    comments.email_id,
+    comments.post_slug,
+    comments.comment,
+    comments.created_at,
+    users.name,
+    users.image
+    FROM comments
+    JOIN users ON comments.email_id = users.email
+    WHERE comments.post_slug = ${id}
+      ORDER BY comments.created_at DESC
+    `;
+    return comments.rows;
+  } catch (error) {
+    console.error('Failed to fetch comments:', error);
+    throw new Error('No se pudieron recuperar los comentarios.');
   }
 }
