@@ -7,8 +7,8 @@ import { getPostBySlug } from '@/app/lib/getPost';
 import markdownToHtml from '@/app/lib/markdownToHtml';
 import distanceToNow from '@/app/lib/dateRelative';
 import markdownStyles from '@/app/ui/consultas/markdown-styles.module.css';
-import FormComment from '@/app/ui/consultas/comments/form-comment';
-import ListComment from '@/app/ui/consultas/comments/list-comment';
+// import FormComment from '@/app/ui/consultas/comments/form-comment';
+// import ListComment from '@/app/ui/consultas/comments/list-comment';
 import {Frente} from '@/app/ui/marcos'
 import { fetchUserById } from '@/app/lib/data';
 
