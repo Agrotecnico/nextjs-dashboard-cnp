@@ -6,7 +6,7 @@ import UserButtonHeader from '@/app/ui/user-button-header';
 import { User } from '@/app/lib/definitions';
 
 
-export default function NavInicio({ user }: { user: User | undefined }) {
+export default function NavInicio(/* { user }: { user: User | undefined } */) {
   const { data: session, update } = useSession();
 
   return (
@@ -19,7 +19,7 @@ export default function NavInicio({ user }: { user: User | undefined }) {
                 <span className="hidden text-sm text-[#fffffff2] [text-shadow:_1px_1px_0px_#000000c9] sm:inline-flex">
                   {session?.user?.email}
                 </span>
-                <UserButtonHeader user={user} />
+                <UserButtonHeader /* user={user}  *//>
               </div>
             ) : (
               <div

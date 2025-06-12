@@ -17,7 +17,7 @@ import { Button } from '@/app/ui/uiRadix/button';
 import { User } from '@/app/lib/definitions';
 
 
-export default function UserButtonHeader( { user }: { user: User | undefined } ) {
+export default function UserButtonHeader( /* { user }: { user: User | undefined } */ ) {
   
   const pathname = usePathname();
 

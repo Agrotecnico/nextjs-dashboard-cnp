@@ -47,10 +47,10 @@ export const metadata: Metadata = {
 
 
 export default function CNPMandataria({
-  user,
+  // user,
   linkDatos,
 }: {
-  user: User | undefined 
+  // user: User | undefined 
   linkDatos: {
     slug: string;
     excerpt: string;
@@ -106,7 +106,7 @@ export default function CNPMandataria({
         },
       }}
     >
-      <NavInicio user={user} />
+      <NavInicio /* user={user} */ />
       
       {/* <div className= "fixed z-20 flex justify-end bottom-[24px] right-[8px] rounded-xl lg:max-w-5xl lg:mx-[calc((100vw_-_64rem)_/_2)] shadow-[0_20px_25px_-5px_rgb(0_0_0_/_0.2),_0_8px_10px_-6px_rgb(0_0_0_/_0.2)]">
         <Link 
@@ -213,7 +213,7 @@ export default function CNPMandataria({
                         {/* {session ? "Ver los trámites" : ""} */}Pedí presupuesto
                         {/* <IconLink size="13px" className='ml-1'/> */}
                       </p> 
-                      <span className={`${user && "hidden" }`}>por tu trámite</span>
+                      <span >por tu trámite</span>{/* className={`${user && "hidden" }`} */}
                     </div>
                   </div>
                 </div>

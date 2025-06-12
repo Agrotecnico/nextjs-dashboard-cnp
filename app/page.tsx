@@ -29,7 +29,7 @@ export default async function Page() {
   return (
     <div className=" w-full h-full min-h-screen">
       <SessionProvider>
-        <CNPMandataria user={user}  linkDatos={linkDatos} />
+        <CNPMandataria /* user={user} */  linkDatos={linkDatos} />
       </SessionProvider>
     </div>
     
