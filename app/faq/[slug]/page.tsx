@@ -39,7 +39,7 @@ export default async function PostPage({ params }: Params) {
     <>
       <Frente className="!rounded-lg !bg-[#ffffffaa] ">
         <article className="px-3 pb-6 pt-6 md:px-6">
-          <h1 className="mb-6 text-xl font-bold md:text-2xl">
+          <h1 className="mb-3 text-xl font-bold sm:mb-6 md:text-2xl">
             {post.excerpt}
           </h1>
 
@@ -66,7 +66,7 @@ export default async function PostPage({ params }: Params) {
                   alt="my desk"
                   width={481}
                   height={361}
-                  className="roundrd w-96 h-auto "
+                  className="roundrd w-64 h-auto sm:w-96 "
                   priority
                 />
               ) : null}
@@ -74,7 +74,7 @@ export default async function PostPage({ params }: Params) {
           </div>
 
           <div className="mx-auto max-w-2xl">
-            <div className="mb-6 block md:hidden">
+            {/* <div className="mb-6 block md:hidden">
               <div className="flex items-center">
                 {post.avatar ? (
                   <Image
@@ -87,10 +87,10 @@ export default async function PostPage({ params }: Params) {
                 ) : null}
                 <div className="text-lg font-bold">{post.autor}</div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="text-md mb-6">
-              <time className="mt-2 flex text-[15px] text-[#1d0215aa] ">
+            <div className="text-md mb-3 sm:mb-6">
+              <time className="mt-2 flex text-[14px] text-[#1d0215aa] ">
                 {distanceToNow(new Date(`${post.date}`))}
               </time>
             </div>

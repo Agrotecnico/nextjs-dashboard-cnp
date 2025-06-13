@@ -6,6 +6,7 @@
 .swiper-wrapper {
   align-items: center;
 }
+
 .swiper2 .swiper-wrapper {
   justify-content: normal;
 }
@@ -44,7 +45,7 @@
   bottom: 0vh;
 }
 .swiper2 .swiper-pagination {
-  bottom: 12vh;
+  bottom: 2vh;
 }
 .swiper2 .swiper-pagination-bullet {
   opacity: 1;
@@ -255,9 +256,9 @@
   .swiper1 > .swiper-pagination {
     top: 40px !important;
   }
-  .swiper2 .swiper-pagination {
+  /* .swiper2 .swiper-pagination {
     bottom: 10vh;
-  }
+  } */
   .swiper3 .swiper-pagination-bullet > a {
     font-size: 15px;
   }
