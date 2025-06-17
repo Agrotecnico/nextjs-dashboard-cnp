@@ -1,5 +1,5 @@
 // import { auth } from "auth"
-import { SessionProvider } from "next-auth/react"
+// import { SessionProvider } from "next-auth/react"
 
 import CNPMandataria from './CNP-mandataria';
 import { getAllPosts } from '@/app/lib/getPost';
@@ -28,9 +28,9 @@ export default async function Page() {
 
   return (
     <div className=" w-full h-full min-h-screen">
-      <SessionProvider>
+      {/* <SessionProvider> */}
         <CNPMandataria /* user={user} */  linkDatos={linkDatos} />
-      </SessionProvider>
+      {/* </SessionProvider> */}
     </div>
     
   )

@@ -1,6 +1,6 @@
 ---
 title: "Denuncia de venta"
-excerpt: "¿Cómo me libero de la responsabilidad civil de mi vehículo que he vendido?"
+excerpt: "¿Cómo me libero de responsabilidad civil del vehículo que vendí?"
 date: "2024-08-25"
 image: "/tramite8.jpg"
 avatar: "/customers/carina-blog.jpg"

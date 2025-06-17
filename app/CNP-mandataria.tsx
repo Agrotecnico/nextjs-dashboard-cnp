@@ -120,18 +120,20 @@ export default function CNPMandataria({
 
       {/* Inicio */}
       <SwiperSlide id="ini" className= "">
-        <div className="flex flex-col items-center justify-center w-full h-[80vh] mt-[15vh] mb-[5vh]">
-          <div className="mb-8 flex flex-col w-full ">
-            <h1 className="font-bold  text-3xl mx-auto mb-5 ">
+        <div className="flex flex-col items-center justify-center w-full h-[70vh] gap-[2%]">
+          <div className="flex flex-col justify-center h-[37%] w-full sm:mb-6">
+            <h1 className="font-bold text-3xl mx-auto mb-1.5 sm:mb-5 sm:mt-4">
               CNP mandataria
             </h1>
-            <p className="text-sm px-4 leading-snug max-w-[700px] my-0 mx-auto text-center md:text-base">
-            Un servicio con la facultad de representación legal, asesoramiento y gestión en la compra/venta de vehículos automotores y náuticos. 
-            Esto incluye la transferencia de dominio, cédula de identificación y otros trámites más.
-            </p>
+            <Frente className=" mx-2 !rounded-xl max-w-[700px] sm:mx-auto sm:w-full sm:rounded-lg">
+              <p className="text-sm px-3 leading-snug py-2 text-center sm:px-4 sm:py-3 sm:text-[15px]">
+              Un servicio con la facultad en representación legal, asesoramiento y gestión en la compra/venta de vehículos automotor y náutico. 
+              Esto incluye la transferencia de dominio, cédula de identificación y otros trámites.
+              </p>
+          </Frente>
           </div>
           <Swiper
-            className="swiper2 !h-[50vh] "
+            className="swiper2 !h-[61%] "
             centeredSlides={true}
             grabCursor={false}
             modules={[
@@ -182,7 +184,7 @@ export default function CNPMandataria({
             {/* Manos */}
             <SwiperSlide className="">
               <div
-                className="absolute top-0 flex w-full h-[40vh] flex-col items-center justify-start rounded-xl text-4xl  bg-cover   bg-[linear-gradient(90deg,#0005,transparent_1.5%,transparent_98.5%,#0005),linear-gradient(180deg,#0005,transparent_1.5%,transparent_98.5%,#0005)]"
+                className="absolute top-0 flex w-full h-full flex-col items-center justify-start rounded-xl text-4xl bg-cover bg-[linear-gradient(90deg,#0005,transparent_1.5%,transparent_98.5%,#0005),linear-gradient(180deg,#0005,transparent_1.5%,transparent_98.5%,#0005)]"
                 >
                 <Image
                   src='https://res.cloudinary.com/dchmrl6fc/image/upload/v1740689220/mano-b_dq8ctv.jpg'
@@ -195,26 +197,26 @@ export default function CNPMandataria({
                 >{/* */}
                 </Image>
 
-                <div className='h-[23vh] absolute mx-4 flex items-center justify-center'>
+                <div className='absolute top-[5%] mx-4 flex items-center justify-center'>
                   <div className='flex flex-col'>
                     <h1 className="mb-2.5 text-xl min-[376px]:text-3xl">
                       Hola! Bienvenido
                     </h1>
-                    <div className="flex flex-col items-start text-[#1d0215dd] text-sm min-[376px]:text-base sm:mx-10">
-                      <div className="flex mb-1 w-full text-center">
-                        Aqui podés
-                        <p /* href={session ? '/dashboard/consultas' : '/realizar-consulta'} */  className="flex px-1.5 rounded-md duration-200 underline decoration-[#1d021581] underline-offset-2 hover:decoration-[#1d0215] hover:underline-offset-[3px] hover:text-[#1d0215] ">
+                    <div className="flex flex-col items-center text-sm min-[376px]:text-base sm:mx-10">
+                      <p className="flex justify-center mb-1 w-full text-center">
+                        Podés
+                        <span /* href={session ? '/dashboard/consultas' : '/realizar-consulta'} */  className="flex px-1.5 rounded-md duration-200 underline decoration-[#1d021581] underline-offset-2 hover:decoration-[#1d0215] hover:underline-offset-[3px] hover:text-[#020b1d] ">
                           {/* {session ? "Ver las consultas" : "Realizar consultas" } */}Realizar consultas
                           {/* <IconLink size="13px" className="ml-1"/> */}
-                        </p>
-                      </div>
+                        </span>
+                      </p>
                       <div className="flex w-full text-center">
                         o
-                        <p /* href={session ? '/dashboard/tramites' : '/iniciar-tramite/baja-de-vehiculo'} */  className="flex duration-200 underline decoration-[#1d021581] underline-offset-2 px-1.5 rounded-md hover:decoration-[#1d0215] hover:underline-offset-[3px] hover:text-[#1d0215] ">
+                        <p /* href={session ? '/dashboard/tramites' : '/iniciar-tramite/baja-de-vehiculo'} */  className="flex duration-200 underline decoration-[#1d021581] underline-offset-2 px-1.5 rounded-md hover:decoration-[#1d0215] hover:underline-offset-[3px] hover:text-[#020b1d]">
                           {/* {session ? "Ver los trámites" : ""} */}Pedí presupuesto
                           {/* <IconLink size="13px" className='ml-1'/> */}
                         </p> 
-                        <span >por tu trámite</span>{/* className={`${user && "hidden" }`} */}
+                        <span >por tu trámite.</span>{/* className={`${user && "hidden" }`} */}
                       </div>
                     </div>
                   </div>
@@ -225,7 +227,7 @@ export default function CNPMandataria({
             {/* Oficina */}
             <SwiperSlide className="">
               <div
-                className="absolute top-0 flex w-full h-[40vh] flex-col items-center justify-start rounded-xl text-4xl bg-cover bg-[linear-gradient(90deg,#0005,transparent_1.5%,transparent_98.5%,#0005),linear-gradient(180deg,#0005,transparent_1.5%,transparent_98.5%,#0005)]"
+                className="absolute top-0 flex w-full h-full flex-col items-center justify-start rounded-xl text-4xl bg-cover bg-[linear-gradient(90deg,#0005,transparent_1.5%,transparent_98.5%,#0005),linear-gradient(180deg,#0005,transparent_1.5%,transparent_98.5%,#0005)]"
               >
                 <Image
                   src='https://res.cloudinary.com/dchmrl6fc/image/upload/v1740689272/carina-oficina_whue5m.jpg'
@@ -241,10 +243,10 @@ export default function CNPMandataria({
                   href={"https://www.dnrpa.gov.ar/portal_dnrpa/mandatarios2.php?CONSULTAS2=true"} 
                   target='_blank'
                   className="w-full text-[#ffffffdd] decoration-[#ffffff77] underline underline-offset-2 duration-150 opacity-60 hover:opacity-80 hover:decoration-[#ffffffdd]">
-                  <p className="flex justify-center items-center gap-2 w-full h-6 leading-5 rounded-t-xl border border-[#111] bg-[#000d] text-[12.5px] font-normal backdrop-blur-[1px] [font-variant-caps:_small-caps] [text-shadow:_1px_1px_black] min-[884px]:text-[15px]">
+                  <p className="flex justify-center items-center gap-2 w-full h-8 leading-5 rounded-t-xl border border-[#111] bg-[#000d] text-[12.5px] font-normal backdrop-blur-[1px] [font-variant-caps:_small-caps] [text-shadow:_1px_1px_black] sm:text-[14px]">
                     Mandataria Nacional{' '}
-                    <span className="text-[11px]">
-                      CUIT{' '}&#160;<span className="text-[12.5px]">27 30615135 0
+                    <span className="text-[11px] sm:text-xs">
+                      CUIT{' '}&#160;<span className="text-[12.5px] sm:text-[13.5px]">27 30615135 0
                     </span></span><IconLink size="12px" color="#ffffff"/*#d400aa" */ color2="#ffffff" />
                   </p>
                 </Link>
@@ -257,9 +259,9 @@ export default function CNPMandataria({
 
       {/* Trámites */}
       <SwiperSlide id="ev" className="">
-        <div className="flex flex-col items-center justify-center w-full h-[80vh] mt-[15vh] mb-[5vh]">
+        <div id="polo" className="flex flex-col items-center justify-center w-full h-[70vh] sm:gap-[2vh] sm:h-[76vh] sm:mt-12">
           <Swiper
-            className="swiper2 "
+            className="swiper2 !h-[85%] sm:!h-[70vh]"
             centeredSlides={true}
             grabCursor={false}
             modules={[
@@ -334,14 +336,14 @@ export default function CNPMandataria({
                   disableOnInteraction: false,
                 }}
               >
-                <h2 className="text-lg absolute z-10 left-3 top-[25vh] text-[#ffffff96] [text-shadow:_1px_1px_0_#00000082] font-extrabold md:top-[26vh]">TRÁMITES</h2>
+                <h2 className="text-lg absolute z-10 left-3 top-[23vh] text-[#ffffff96] [text-shadow:_1px_1px_0_#00000082] font-extrabold md:top-[25vh]">TRÁMITES</h2>
                 <SwiperSlide>
                   <Image
                     src='/tramite1.jpg'
                     alt="Baja de vehículo"
                     width={960}
                     height={720}
-                    className="absolute object-cover h-[30vh] top-[0px] flex w-full items-center justify-center rounded-l-[10px]"
+                    className="absolute object-cover h-[28vh] top-[0px] flex w-full items-center justify-center rounded-tl-xl sm:h-[30vh]"
                   >
                   </Image>
                 </SwiperSlide>
@@ -352,7 +354,7 @@ export default function CNPMandataria({
                     alt="Cambio de radicación y domicilio"
                     width={660}
                     height={490}
-                    className="absolute object-cover h-[30vh] top-[0px] flex w-full items-center justify-center rounded-l-[10px]"
+                    className="absolute object-cover h-[28vh] top-[0px] flex w-full items-center justify-center rounded-tl-xl sm:h-[30vh]"
                   ></Image>
                 </SwiperSlide>
 
@@ -362,17 +364,17 @@ export default function CNPMandataria({
                     alt="Denuncia de venta"
                     width={660}
                     height={490}
-                    className="absolute object-fill h-[30vh] top-[0px] flex w-full items-center justify-center rounded-l-[10px]"
+                    className="absolute object-fill h-[28vh] top-[0px] flex w-full items-center justify-center rounded-tl-xl sm:h-[30vh]"
                   ></Image>
                 </SwiperSlide>  
               </Swiper>
-              <div className="flex flex-col justify-start absolute z-10 bottom-[16%] items-center sm:bottom-[12%] sm:pt-[4vh]">
-                <div className="flex items-center w-full justify-center">
+              <div className="flex flex-col justify-start absolute z-10 top-[70%] items-center sm:top-[55%] sm:pt-[4vh]">
+                <div className="mb-[5px] flex items-center w-full justify-center">
                   <IconConocimiento size="33" className="h-9 sm:h-10" />
                 </div>
                 <div className="px-4">
                   <h4 className="font-bold text-base m-0">Conocimiento Especializado</h4>
-                  <p className="hidden mt-[1vh] mx-0 mb-0 font-normal text-sm text-center md:block sm:text-[15px] sm:mt-[2vh] ">
+                  <p className="hidden mt-[1vh] mx-0 mb-0 font-normal text-sm text-center lg:block sm:text-[15px] sm:mt-[2vh] ">
                     Profesional matriculada  por la <dfn title="Dirección Nacional de Registros y Propiedad del Automotor" className="text-[#2e37e6] font-medium ">DNRPA</dfn>.
                     Capacitada para realizar los trámites de la manera más eficiente en los Registros Seccionales.
                   </p>
@@ -381,7 +383,7 @@ export default function CNPMandataria({
             </SwiperSlide>
 
             {/* Trámite 2 */}
-            <SwiperSlide className="">
+            <SwiperSlide className="border-x-0.5 border-[#f1eef0]">
               <Swiper
                 speed={600}
                 loop={true}
@@ -407,15 +409,15 @@ export default function CNPMandataria({
                   disableOnInteraction: false,
                 }}
               >
-                <h2 className="text-lg absolute z-10 left-3 top-[25vh] text-[#ffffff96] [text-shadow:_1px_1px_0_#00000082] font-extrabold md:top-[26vh]">TRÁMITES</h2>
+                <h2 className="text-lg absolute z-10 left-3 top-[23vh] text-[#ffffff96] [text-shadow:_1px_1px_0_#00000082] font-extrabold md:top-[25vh]">TRÁMITES</h2>
                 <SwiperSlide>
                   <Image
                     src='/tramite4.jpg'
                     alt="Duplicado de título o cédula"
                     width={960}
                     height={720}
-                    className="absolute object-cover  h-[30vh] top-[0px] flex w-full items-center justify-center"
-                  >
+                    className="absolute object-cover h-[28vh] top-[0px] flex w-full items-center justify-center sm:h-[30vh]"
+                  >{/*  border-x-1 border-white */}
                   </Image>
 
                 </SwiperSlide>
@@ -426,7 +428,7 @@ export default function CNPMandataria({
                     alt="Informe de Estado de Dominio"
                     width={660}
                     height={490}
-                    className="absolute object-cover  h-[30vh] top-[0px] flex w-full items-center justify-center"
+                    className="absolute object-cover h-[28vh] top-[0px] flex w-full items-center justify-center sm:h-[30vh]"
                   ></Image>
                     
                 </SwiperSlide>
@@ -437,19 +439,19 @@ export default function CNPMandataria({
                     alt="Inscripción inicial"
                     width={660}
                     height={490}
-                    className="absolute object-cover  h-[30vh] top-[0px] flex w-full items-center justify-center"
+                    className="absolute object-cover h-[28vh] top-[0px] flex w-full items-center justify-cente sm:h-[30vh]r"
                   ></Image>
                     
                 </SwiperSlide>  
 
               </Swiper>
-              <div className="flex flex-col justify-start absolute z-10 bottom-[16%] items-center sm:bottom-[12%] sm:pt-[4vh]">
-                <div className="flex items-center w-full justify-center">
+              <div className="flex flex-col justify-start absolute z-10 top-[70%] items-center sm:top-[55%] sm:pt-[4vh]">
+                <div className="mb-[5px] flex items-center w-full justify-center">
                   <IconTiempo  className="h-9 sm:h-10"/>
                 </div>
                 <div className="px-2">
                   <h4 className="font-bold text-base m-0">Ahorra Tiempo y Esfuerzo</h4>
-                  <p className="hidden mt-[1vh] mx-0 mb-0 font-normal text-sm text-center sm:text-[15px] sm:mt-[2vh] md:block">
+                  <p className="hidden mt-[1vh] mx-0 mb-0 font-normal text-sm text-center sm:text-[15px] sm:mt-[2vh] lg:block">
                   Si no estás familiarizado con los procedimientos o si no tenés tiempo para gestionarlos tú mismo, 
                   nos encargaremos de los detalles para cursar el trámite.
                   </p>
@@ -484,14 +486,14 @@ export default function CNPMandataria({
                     disableOnInteraction: false,
                   }}
               >
-                <h2 className="text-lg absolute z-10 left-3 top-[25vh] text-[#ffffff96] [text-shadow:_1px_1px_0_#00000082] font-extrabold md:top-[26vh]">TRÁMITES</h2>
+                <h2 className="text-lg absolute z-10 left-3 top-[23vh] text-[#ffffff96] [text-shadow:_1px_1px_0_#00000082] font-extrabold md:top-[25vh]">TRÁMITES</h2>
                 <SwiperSlide>
                   <Image
                     src='/tramite7.jpg'
                     alt="Reempadronamiento"
                     width={960}
                     height={720}
-                    className="absolute object-cover h-[30vh] top-[0px] flex w-full items-center justify-center rounded-r-[10px]"
+                    className="absolute object-cover h-[28vh] top-[0px] flex w-full items-center justify-center rounded-tr-xl sm:h-[30vh]"
                   >
                   </Image>
 
@@ -503,7 +505,7 @@ export default function CNPMandataria({
                     alt="Renovación de Cédula"
                     width={660}
                     height={490}
-                    className="absolute object-cover h-[30vh] top-[0px] flex w-full items-center justify-center rounded-r-[10px]"
+                    className="absolute object-cover h-[28vh] top-[0px] flex w-full items-center justify-center rounded-tr-xl sm:h-[30vh]"
                   ></Image>
                 </SwiperSlide>
 
@@ -513,17 +515,17 @@ export default function CNPMandataria({
                     alt="Transferencia de dominio"
                     width={660}
                     height={490}
-                    className="absolute object-cover h-[30vh] top-[0px] flex w-full items-center justify-center rounded-r-[10px]"
+                    className="absolute object-cover h-[28vh] top-[0px] flex w-full items-center justify-center rounded-tr-xl sm:h-[30vh]"
                   ></Image>
                 </SwiperSlide>      
               </Swiper>
-              <div className="flex flex-col justify-start absolute z-10 bottom-[16%] items-center sm:bottom-[12%] sm:pt-[4vh]">
-                <div className="flex items-center w-full justify-center">
+              <div className="flex flex-col justify-start absolute z-10 top-[70%] items-center sm:top-[55%] sm:pt-[4vh]">
+                <div className="mb-[5px] flex items-center w-full justify-center">
                   <IconSeguridad size="33"  className="h-9 sm:h-10"/>
                 </div>
                 <div className="px-4">
                   <h4 className="font-bold text-base m-0">Seguridad y Legalidad</h4>
-                  <p className="hidden mt-[1vh] mx-0 mb-0 font-normal text-sm text-center sm:text-[15px] sm:mt-[2vh] md:block">
+                  <p className="hidden mt-[1vh] mx-0 mb-0 font-normal text-sm text-center sm:text-[15px] sm:mt-[2vh] lg:block">
                   Debidamente habilitada y registrada, se garantiza que todos los trámites se realizán de manera legal y segura, evitando posibles problemas a futuro.
                   </p>
                 </div>
@@ -533,148 +535,98 @@ export default function CNPMandataria({
           <Link 
             href={"https://api.whatsapp.com/send?phone=543476606595"}
             target="_blank"  
-            className={`py-1 px-3 bg-[#50073a19] opacity-80 rounded-xl text-sm flex items-center justify-center gap-6 hover:opacity-100 active:opacity-80 shadow-[0_20px_25px_-5px_rgb(0_0_0_/_0.11),_0_8px_10px_-6px_rgb(0_0_0_/_0.11)] sm:flex-row sm:text-[15px] `}>
+            className={`py-0.5 px-3 mb-2 bg-[#fff] duration-150 opacity-80 rounded-[10px] text-sm flex items-center justify-center gap-6 shadow-[0_10px_20px_#020b1d33] hover:opacity-100 active:opacity-80 sm:flex-row sm:text-[15px] `}>
             <div className="flex flex-col gap-0 sm:gap-4 sm:flex-row">
-                <div className="h-6 flex items-center justify-start sm:h-[26px]">
-                  <IconPresupuesto 
-                    className="mr-2 w-[15px] h-[15px] sm:w-[16px] sm:h-[16px]"
-                    color="#ffffffdd" color2="#1d0215"
-                    />
-                  <p>Pedir presupuesto</p>
-                </div>
-                <div className="h-6 flex items-center justify-start sm:h-[26px]">
-                  <IconConsulta 
-                    className="mr-2 w-[15px] h-[15px] sm:w-[16px] sm:h-[16px]"
-                    color="#ffffffdd" color2="#1d0215"
-                    />
-                  <p>Realizar consulta</p>
-                </div>
+              <div className="h-6 flex items-center justify-start sm:h-[26px]">
+                <IconPresupuesto 
+                  className="mr-2 w-[15px] h-[15px] sm:w-[16px] sm:h-[16px]"
+                  color="#ffffffdd" color2="#020b1d"
+                  />
+                <p>Pedí presupuesto</p>
+              </div>
+              <div className="h-6 flex items-center justify-start sm:h-[26px]">
+                <IconConsulta 
+                  className="mr-2 w-[15px] h-[15px] sm:w-[16px] sm:h-[16px]"
+                  color="#ffffffdd" color2="#020b1d"
+                  />
+                <p>Realizá tu consulta</p>
+              </div>
             </div>
-            <div className="bg-[#57c061] rounded-lg flex justify-center items-center" >
-              <IconWhatsApp size="32" colorFondo="#0000"  className=" " />
-            </div>
+            {/* <div className="bg-[#57c061] rounded-lg flex justify-center items-center" > */}
+              <IconWhatsApp size="36" color="#57c061" colorFondo="#0000"  className=" " />
+            {/* </div> */}
           </Link>
         </div> 
       </SwiperSlide>
 
       {/* Consultas */}
       <SwiperSlide id="cp"className="" >
-        <div className="w-full absolute top-0 z-10 flex h-full flex-col items-center justify-start gap-6 pt-24 px-2 [border-radius:_12px_12px_0_0] sm:px-4 md:px-9 sm:pt-[24vh] ">
-          <Fondo className="p-2 sm:p-4">
+        <div className="flex flex-col items-center justify-center w-full h-[70vh] gap-[7%]">
+          <div className="p-2 mx-2 sm:p-4">
             <div className="mb-1.5 w-full text-[17px] text-center font-medium sm:text-xl sm:mt-2.5 sm:mb-4">
               CONSULTAS FRECUENTES
             </div>
             
-            <div className=" flex flex-col gap-2 ">
+            <div className=" flex flex-col gap-[3px] sm:gap-1 ">
               {linkDatos.length ? (
                 linkDatos.map((linkDato) => (
-                  <div key={linkDato.slug}>
-                    <Link
-                      as={`/faq/${linkDato.slug}`}
-                      href="/faq/[slug]"
-                      className=" "
-                    >
-                      <Frente className="py-1.5 px-4 gap-5 text-[#1d0215cc] flex justify-between items-center duration-200 hover:bg-[#ffffffbb] hover:text-[#1d0215] ">
-                        <p className="text-sm text-start max-[512px]:text-sm">
-                          {linkDato.excerpt}
-                        </p>
-                        <div>
-                          <ChevronRightIcon className="w-4 min-[512px]:w-4 "  />
-                        </div>
-                      </Frente>
-                    </Link>
-                  </div>
+                  <Link
+                    as={`/faq/${linkDato.slug}`}
+                    href="/faq/[slug]"
+                    className=" "
+                    key={linkDato.slug}
+                  >
+                    <Frente className="py-1 px-3 gap-5 flex justify-between items-center duration-200 hover:bg-[#ffffffcc] hover:text-[#020b1d] sm:px-4 sm:py-3">
+                      <p className="text-sm text-start sm:text-[15px]">
+                        {linkDato.excerpt}
+                      </p>
+                      <div>
+                        <ChevronRightIcon className="w-4 "  />
+                      </div>
+                    </Frente>
+                  </Link>
                 ))
               ) : (
                 <p>Ninguna consulta publicado todavía</p>
               )}
             </div>
-          </Fondo>
+          </div>
 
           <Link 
             href={"https://api.whatsapp.com/send?phone=543476606595"}
             target="_blank"  
-            className="py-1 px-3 bg-[#50073a19] opacity-80 rounded-xl flex items-center gap-6 absolute bottom-[13vh] text-sm shadow-[0_20px_25px_-5px_rgb(0_0_0_/_0.11),_0_8px_10px_-6px_rgb(0_0_0_/_0.11)] hover:opacity-100 active:opacity-80 sm:text-[15px]">
+            className="py-0.5 px-3 bg-[#fff] duration-150 opacity-80 rounded-[10px] flex items-center gap-6 text-sm shadow-[0_10px_20px_#020b1d33] hover:opacity-100 active:opacity-80 sm:text-[15px] sm:mt-12">
             <div className="flex flex-col gap-0 sm:gap-4 sm:flex-row">
               <div className="h-6 flex items-center justify-start sm:h-[26px]">
                 <IconPresupuesto 
                   className="mr-2 w-[15px] h-[15px] sm:w-[16px] sm:h-[16px]"
-                  color="#ffffffdd" color2="#1d0215"
+                  color="#ffffffdd" color2="#020b1d"
                   />
-                <p>Pedir presupuesto</p>
+                <p>Pedí presupuesto</p>
               </div>
               <div className="h-6 flex items-center justify-start sm:h-[26px]">
                 <IconConsulta 
                   className="mr-2 w-[15px] h-[15px] sm:w-[16px] sm:h-[16px]"
-                  color="#ffffffdd" color2="#1d0215"
+                  color="#ffffffdd" color2="#020b1d"
                   />
-                <p>Realizar consulta</p>
+                <p>Realizá tu consulta</p>
               </div>
             </div>
-            <div className="bg-[#57c061] rounded-lg flex justify-center items-center" >
-              <IconWhatsApp size="32" colorFondo="#0000"  className=" " />
-            </div>
+            <IconWhatsApp size="36" color="#57c061" colorFondo="#0000"  className=" " />
           </Link>
-        </div>
-        <FooterInicio />
-        {/* <div className="flex items-center justify-center w-full h-[80vh] mt-[15vh] mb-[5vh] bg-red-400">
-          <div className="w-full absolute top-0 z-10 flex h-full flex-col items-center justify-start gap-6 pt-24 px-2 [border-radius:_12px_12px_0_0] sm:px-4 md:px-9 sm:pt-[24vh] ">
-            <Fondo className="p-2 sm:p-4">
-              <div className="mb-1.5 w-full text-[17px] text-center font-medium sm:text-xl sm:mt-2.5 sm:mb-4">
-                CONSULTAS FRECUENTES
-              </div>
-              
-              <div className=" flex flex-col gap-2 ">
-                {linkDatos.length ? (
-                  linkDatos.map((linkDato) => (
-                    <div key={linkDato.slug}>
-                      <Link
-                        as={`/faq/${linkDato.slug}`}
-                        href="/faq/[slug]"
-                        className=" "
-                      >
-                        <Frente className="py-2.5 px-4 gap-5 text-[#1d0215cc] flex justify-between items-center duration-200 hover:bg-[#ffffffbb] hover:text-[#1d0215] ">
-                          <p className="text-sm text-start max-[512px]:text-sm">
-                            {linkDato.excerpt}
-                          </p>
-                          <div>
-                            <ChevronRightIcon className="w-4 min-[512px]:w-4 "  />
-                          </div>
-                        </Frente>
-                      </Link>
-                    </div>
-                  ))
-                ) : (
-                  <p>Ninguna consulta publicado todavía</p>
-                )}
-              </div>
-            </Fondo>
-            <Link 
-              href={"https://api.whatsapp.com/send?phone=543476606595"}
-              target="_blank"  
-              className="py-1 px-3 bg-[#50073a19] opacity-80 rounded-xl flex items-center gap-6 absolute bottom-[11vh] text-sm shadow-[0_20px_25px_-5px_rgb(0_0_0_/_0.11),_0_8px_10px_-6px_rgb(0_0_0_/_0.11)] hover:opacity-100 active:opacity-80 sm:text-[15px]">
-              <div className="flex flex-col gap-0 sm:gap-4 sm:flex-row">
-                <div className="h-6 flex items-center justify-start sm:h-[26px]">
-                  <IconPresupuesto 
-                    className="mr-2 w-[15px] h-[15px] sm:w-[16px] sm:h-[16px]"
-                    color="#ffffffdd" color2="#1d0215"
-                    />
-                  <p>Pedir presupuesto</p>
-                </div>
-                <div className="h-6 flex items-center justify-start sm:h-[26px]">
-                  <IconConsulta 
-                    className="mr-2 w-[15px] h-[15px] sm:w-[16px] sm:h-[16px]"
-                    color="#ffffffdd" color2="#1d0215"
-                    />
-                  <p>Realizar consulta</p>
-                </div>
-              </div>
-              <div className="bg-[#57c061] rounded-lg flex justify-center items-center" >
-                <IconWhatsApp size="32" colorFondo="#0000"  className=" " />
-              </div>
-            </Link>
+
+          <div className="flex flex-col justify-center items-center leading-[1.1rem] text-[#39507f] text-[13px] sm:text-[14px] max-w-[1100px] sm:hidden">
+            <div className="flex items-center gap-1">
+              <div className="flex "><span className="font-semibold">C</span><span className="opacity-80 flex h-full items-center">arina</span></div>
+              <div className="flex "><span className="font-semibold">N</span><span className="opacity-80 flex h-full items-center">oemí</span></div>
+              <div className="flex "><span className="font-semibold">P</span><span className="opacity-80 flex h-full items-center">acheco</span></div>
+            </div>
+
+            <div className=" ">
+              cnp.mandataria@gmail.com
+            </div>
           </div>
-        </div>  */}
+        </div>
         <FooterInicio />
       </SwiperSlide>
     </Swiper>

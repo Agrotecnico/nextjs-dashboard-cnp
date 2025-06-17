@@ -8,7 +8,7 @@ export type IconProps = {
 
 const IconConsulta: React.FC<IconProps> = ({
   size=40,
-  color= "#1d0215",
+  color= "#020b1d",
   color2= "#ffffff",
   ...attributes
 }) => {
