@@ -1,6 +1,6 @@
 ---
 title: "Diferencias entre un gestor y un mandatario"
-excerpt: "¿Cuál es la diferencia entre un Gestor y un Mandatario Nacional del automotor?"
+excerpt: "¿Cuál es la diferencia entre un Gestor y un Mandatario Nacional?"
 date: "2024-04-25"
 image: "/carina-oficina.jpg"
 avatar: "/customers/carina-blog.jpg"

@@ -8,8 +8,8 @@ export type IconProps = {
 
 const IconLink: React.FC<IconProps> = ({
   size=40,
-  color= "#bf12bf",
-  color2= "#50073aaa",
+  color= "#bf12bfdd",
+  color2= "#39507f",
   ...attributes
 }) => {
   return (

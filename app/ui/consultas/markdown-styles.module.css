@@ -42,7 +42,7 @@
   }
 
   .markdown li {
-    @apply text-base mt-4 mb-2;
+    @apply text-sm mt-2 mb-1 sm:mt-4 sm:mb-2 sm:text-base;
   }
   
 

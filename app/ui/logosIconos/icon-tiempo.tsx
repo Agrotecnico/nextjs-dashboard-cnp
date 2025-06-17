@@ -7,7 +7,7 @@ export type IconProps = {
 
 const IconTiempo: React.FC<IconProps> = ({
   size=40,
-  fill= "#b2439a",
+  fill= "#39507f",
   ...attributes
 }) => {
   return (
