@@ -34,17 +34,17 @@ export default function NavInicio(/* { user }: { user: User | undefined } */) {
                 </div>
               </div>
             )} */}
-            <div
-                // href="#"
-                className="flex flex-col items-center opacity-80 duration-200 "/* hover:opacity-100 */
-              >
-                <div className="max-w-max ">
-                  <IconCuenta className="w-6 sm:w-7" color={'#fff6'} />
-                </div>
-                <div className="flex flex-col items-center text-[#fff9] min-[500px]:flex-row">
-                  <div className="text-[13px] leading-none sm:text-sm sm:leading-none">Acceso</div>
-                </div>
+            <Link
+              href="/login"
+              className="flex flex-col items-center opacity-70 duration-200 hover:opacity-100"
+            >
+              <div className="max-w-max ">
+                <IconCuenta className="w-6 sm:w-7" color={'#fffc'} />
               </div>
+              <div className="flex flex-col items-center text-[#fff] min-[500px]:flex-row">
+                <div className="text-[13px] leading-none sm:text-sm sm:leading-none">Acceso</div>
+              </div>
+            </Link>
           </div>
         </nav>
       </header>

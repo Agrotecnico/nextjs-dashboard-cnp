@@ -21,10 +21,12 @@ export default  function UserButtonMenuFaq({allPosts}:{allPosts:Post}) {
     <div className={`block  min-[1024px]:hidden`}>
       <Dropdown>
         <Dropdown.Button>
-          <p className="flex items-center gap-2 text-[13px] leading-[1.1] text-[#fff] font-medium duration-200 opacity-75 hover:opacity-[0.9] ">
+          <div className="flex items-center gap-2  duration-200 opacity-75 hover:opacity-[0.9]">
             <IconMenu width='18px' className="fill-[#ffffffcc]"/>
-            FAQ
-          </p>
+            <p className="text-[13px] leading-[1.1] text-[#fff] font-medium ">
+              FAQ
+            </p>
+          </div>
         </Dropdown.Button>
 
         <Dropdown.Menu >

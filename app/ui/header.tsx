@@ -70,21 +70,21 @@ export default async function Header( ) {
             <UserButtonHeader user={user} />
           </div>
         ) : ( */}
-          <div
-            // href="#"
-            className="flex flex-col items-center opacity-80 duration-200"
+          <Link
+            href="/login"
+            className="flex flex-col items-center opacity-70 duration-200 hover:opacity-95"
           >
             <div className="max-w-max ">
               <IconCuenta
                 className="w-6 sm:w-7"
-                color={'#fff9'}
+                color={'#fff'}
               />
             </div>
             <div 
-              className="text-[13px] text-[#fffffff2] leading-none sm:text-sm sm:leading-none">
+              className="text-[13px] text-[#fff] leading-none sm:text-sm sm:leading-none">
               Acceso
             </div>
-          </div>
+          </Link>
         {/* )} */}
       </div>
     </header>
